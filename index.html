@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🎱 행운의 로또</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" crossorigin src="/javascript-lotto/assets/index-C4ZoBTz8.js"></script>
+    <link rel="stylesheet" crossorigin href="/javascript-lotto/assets/index-BRuNFoEj.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <header>🎱 행운의 로또</header>
+      <main>
+        <h1>🎱 내 번호 당첨 확인 🎱</h1>
+        <form id="purchase-form">
+          <span>구입할 금액을 입력해주세요.</span>
+          <div>
+            <input id="purchase-form__input" type="number" />
+            <button disabled id="purchase-form__btn">구입</button>
+          </div>
+          <span id="purchase-form__error" class="error-message"></span>
+        </form>
+        <section id="after-purchase-wrap" class="hidden">
+          <section id="lotto-list-wrap">
+            <span>총 <span id="lotto-count"></span>개를 구매하였습니다.</span>
+            <ul id="lotto-list"></ul>
+          </section>
+          <form id="lotto-form">
+            <span>지난 주 당첨번호 6개와 보너스 번호 1개를 입력해주세요.</span>
+            <section>
+              <div class="numbers">
+                <span>당첨번호</span>
+                <div>
+                  <input class="winning-numbers__input" />
+                  <input class="winning-numbers__input" />
+                  <input class="winning-numbers__input" />
+                  <input class="winning-numbers__input" />
+                  <input class="winning-numbers__input" />
+                  <input class="winning-numbers__input" />
+                </div>
+              </div>
+              <div id="bonus-number" class="numbers">
+                <span>보너스 번호</span>
+                <input id="bonus-number__input" type="number" />
+              </div>
+            </section>
+            <span id="lotto-form__error" class="error-message"></span>
+            <button id="lotto-form__btn">결과 확인하기</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>Copyright 2023. woowacourse</footer>
+    </div>
+    <section id="modal-wrap" class="hidden">
+      <div id="modal">
+        <button id="modal__close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <path
+              d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+            />
+          </svg>
+        </button>
+        <h1>🏆 당첨통계 🏆</h1>
+        <table id="lotto-result-table"></table>
+        <span>당신의 총 수익률은 <span id="winningRate"></span>% 입니다.</span>
+        <button id="modal__retry-btn">다시 시작하기</button>
+      </div>
+    </section>
+  </body>
+</html>

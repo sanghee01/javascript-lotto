@@ -1,0 +1,246 @@
+/* 모든 요소 초기화 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 기본적인 HTML 요소 스타일 조정 */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* 제목 태그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* 리스트 스타일 제거 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 링크 스타일 기본 설정 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 이미지 크기 조정 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 테이블 스타일 정리 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* 버튼 커서 */
+button {
+  cursor: pointer;
+}
+
+/* input number type 기본 속성인 화살표 제거 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#app {
+  height: 100vh;
+}
+
+header {
+  background-color: #4e5ba6;
+  padding: 15px 80px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 414px;
+  min-height: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0px auto;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+#purchase-form__input {
+  padding: 6px;
+  width: 80%;
+  border: 1px solid #b4b4b4;
+  border-radius: 4px;
+}
+
+#purchase-form__btn {
+  padding: 7px;
+  width: 15%;
+  margin-left: 5px;
+  background-color: #4e5ba6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#lotto-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#lotto-list li {
+  margin-bottom: 10px;
+}
+
+#lotto-numbers-form section {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+#lotto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#lotto-form section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers input {
+  padding: 10px;
+  width: 34px;
+  height: 36px;
+  border: 1px solid #b4b4b4;
+  border-radius: 4px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#bonus-number {
+  display: flex;
+  align-items: end;
+}
+
+#lotto-form__btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4e5ba6;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  align-content: center;
+  height: 80px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  color: #4e5ba6;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-message {
+  color: rgb(208, 40, 40);
+  font-size: 0.85rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+tr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#modal-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+#modal {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#modal__close-btn {
+  width: 100%;
+  border: none;
+  background-color: white;
+  text-align: right;
+}
+
+#modal__retry-btn {
+  padding: 10px;
+  width: 100%;
+  margin-left: 5px;
+  background-color: #4e5ba6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+/* body {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
